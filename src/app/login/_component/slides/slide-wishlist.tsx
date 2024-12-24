@@ -15,10 +15,8 @@ export default function SlideWishlist() {
         </p>
       </div>
       <Gap vertical size={58} />
-      <div className="flex justify-between w-full min-h-[305px] ">
-        <div className="relative w-full h-[305px] bg-white/50">
-          <Image src="/login-onboarding/login-onboarding-wishlist.svg" alt="left" fill className="object-cover" />
-        </div>
+      <div className="relative w-full h-[305px] bg-white/50">
+        <Image src="/login-onboarding/login-onboarding-wishlist.svg" alt="wishlist" fill className="object-cover" />
       </div>
     </>
   );

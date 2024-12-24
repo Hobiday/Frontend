@@ -57,7 +57,7 @@ export default function RegistrationForm() {
   }, [router]);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full min-h-dvh gap-4">
+    <div className="flex flex-col justify-center items-center w-full min-h-dvh gap-4 bg-white">
       <LoadingSpinner size={60} />
       <h2 className="text-gray-600">로그인 중입니다. 잠시만 기다려 주세요!</h2>
     </div>

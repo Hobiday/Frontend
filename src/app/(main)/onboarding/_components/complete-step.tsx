@@ -73,7 +73,7 @@ export default function CompleteStep() {
           <div className="absolute bottom-[50px] w-full px-[23px] animate-fade-in-up">
             <Link href="/" className="block">
               <Button variant="primary" size="lg" fullWidth>
-                Hobiday 둘러보기
+                Hobiday 시작하기
               </Button>
             </Link>
           </div>

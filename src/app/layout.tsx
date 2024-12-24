@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${pretendard.className} antialiased max-w-[430px] w-full mx-auto bg-blue-100`}>
+      <body className={`${pretendard.className} antialiased max-w-[430px] w-full mx-auto bg-blue-50`}>
         <ReactQueryProvider>
           <BottomSheetProvider>
             <ModalProvider>{children}</ModalProvider>

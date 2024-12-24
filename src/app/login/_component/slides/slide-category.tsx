@@ -1,6 +1,6 @@
 import Chip from "@/components/commons/chip";
 import Gap from "@/components/commons/gap";
-import { TAB_CATEGORY } from "@/constants/category";
+import { PERFORMANCE_CATEGORY } from "@/constants/category";
 
 export default function SlideCategory() {
   return (
@@ -21,7 +21,7 @@ export default function SlideCategory() {
           label="전체"
           className="col-span-3 h-[42px] text-center rounded-2xl text-base cursor-default hover:bg-white"
         />
-        {TAB_CATEGORY.map((category) => (
+        {PERFORMANCE_CATEGORY.map((category) => (
           <Chip
             key={category.id}
             label={category.name}

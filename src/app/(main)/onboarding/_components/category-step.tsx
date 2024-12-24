@@ -2,7 +2,7 @@ import Button from "@/components/commons/button";
 import Chip from "@/components/commons/chip";
 import Gap from "@/components/commons/gap";
 import StepLayout from "@/components/layout/step-layout";
-import { TAB_CATEGORY } from "@/constants/category";
+import { PERFORMANCE_CATEGORY } from "@/constants/category";
 import { useOnboardingStore } from "@/stores/use-onboarding.store";
 import { useState } from "react";
 
@@ -14,14 +14,13 @@ export default function CategoryStep({ onNext }: CategoryStepProps) {
   const { categories, setCategories } = useOnboardingStore();
   const [selectedCategories, setSelectedCategories] = useState<string[]>(categories);
 
-  const categoryList = TAB_CATEGORY.slice(1); // "전체"를 제외한 카테고리
-  const isAllSelected = selectedCategories.length === categoryList.length;
+  const isAllSelected = selectedCategories.length === PERFORMANCE_CATEGORY.length;
 
   const handleAllClick = () => {
     if (isAllSelected) {
       setSelectedCategories([]);
     } else {
-      setSelectedCategories(categoryList.map((category) => category.name));
+      setSelectedCategories(PERFORMANCE_CATEGORY.map((category) => category.name));
     }
   };
 
@@ -52,7 +51,7 @@ export default function CategoryStep({ onNext }: CategoryStepProps) {
             onClick={handleAllClick}
             className="col-span-3 text-center"
           />
-          {categoryList.map((category) => (
+          {PERFORMANCE_CATEGORY.map((category) => (
             <Chip
               key={category.id}
               label={category.name}

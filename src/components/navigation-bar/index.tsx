@@ -18,25 +18,25 @@ const NAVIGATION_TABS = [
   {
     name: "홈",
     path: "/",
-    defaultIcon: <HomeDefault />,
+    defaultIcon: <HomeDefault className="stroke-gray-400" />,
     pressedIcon: <HomeGradationIcon />,
   },
   {
     name: "피드",
     path: "/feed",
-    defaultIcon: <FeedDefault />,
+    defaultIcon: <FeedDefault className="fill-gray-400" />,
     pressedIcon: <FeedGradationIcon />,
   },
   {
     name: "위시리스트",
     path: "/wishlist",
-    defaultIcon: <HeartDefault />,
+    defaultIcon: <HeartDefault className="fill-gray-400" />,
     pressedIcon: <HeartGradationIcon />,
   },
   {
     name: "마이페이지",
     path: "/my",
-    defaultIcon: <AccountDefault />,
+    defaultIcon: <AccountDefault className="fill-gray-400" />,
     pressedIcon: <AccountGradationIcon />,
   },
 ];
