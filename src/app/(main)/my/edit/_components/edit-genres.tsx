@@ -1,4 +1,3 @@
-import { updateMyProfile } from "@/apis/user-api";
 import SvgArrowForward from "@/assets/svgr-icons/ArrowForward";
 import BottomSheet from "@/components/bottom-sheet";
 import Button from "@/components/commons/button";
@@ -7,7 +6,6 @@ import { FEED_CATEGORY } from "@/constants/category";
 import { useBottomSheet } from "@/contexts";
 import { useUpdateProfileMutation } from "@/hooks/user/use-profile-update";
 import { useOnboardingStore } from "@/stores/use-onboarding.store";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 interface ProfileGenresProps {
